@@ -1,19 +1,21 @@
 program first_func
   implicit none
-  real :: num, result, num2, log_result
+  real :: base, exponent, result, num, num2, log_result
 
-  ! Prompt the user for input
-  print *, 'Enter a number:'
-  read *, num
+  ! Prompt the user for base and exponent input
+  print *, 'Enter a base number:'
+  read *, base
+  print *, 'Enter an exponent:'
+  read *, exponent
 
-  ! Compute the 5th power
-  result = num ** 5
+  ! Compute the power
+  result = base ** exponent
 
   ! Display the result
-  print *, 'The number raised to the 5th power is:', result
+  print *, 'The number raised to the given power is:', result
 
   ! Prompt the user for another input
-  print *, 'Enter another number:'
+  print *, 'Enter another number to compute its natural logarithm:'
   read *, num2
 
   ! Compute the natural logarithm
